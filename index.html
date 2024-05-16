@@ -1,67 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Try it free
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
-  Build The Community Your Fans Will Love
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <!-- <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pink: "hsl(322, 100%, 66%)",
+              lightPink: "hsl(321,100%,78%)",
+              lightRed: "hsl(0,100%,63%)",
+              darkCyan: "hsl(192,100%,9%)",
+              paleBlue: "hsl(207,100%,98%)",
+            },
+            fontFamily: {
+              heading: ["Poppins", "sans-serif"],
+              body: ['"Open Sans"'],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        html {
+          font-family: "Open Sans", system-ui, sans-serif;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <!--navigation-->
+    <nav class="flex justify-between items-center p-6">
+      <div class="w-24">
+        <img class="object-cover" src="./assets/logo.svg" alt="logo" />
+      </div>
+      <button
+        class="border rounded-full border-lightPink px-4 py-1 font text-xs text-lightPink"
+      >
+        Try it Free
+      </button>
+    </nav>
+    <!--section header-->
+    <section class="flex flex-col text-center gap-8 mx-6 my-12">
+      <h1 class="font-heading font-bold text-2xl">
+        Build The Community Your Fans Will Love
+      </h1>
+      <p class="text-sm">
+        Huddle re-imagines the way we build communities. You have a voice, but
+        so does your audience. Create connections with your users as you engage
+        in genuine discussion.
+      </p>
+      <button
+        class="w-fit m-auto py-2 px-8 border border-pink rounded-full bg-pink text-white text-xs shadow-lg"
+      >
+        Get Started For Free
+      </button>
+    </section>
+    <!--section hero-->
+    <section>
+      <img class="px-6 py-12" src="assets/screen-mockups.svg" alt="mockup" />
+      <div class="flex flex-col gap-10 items-center">
+        <!--communities-->
+        <div class="flex flex-col gap-2">
+          <img width="30" src="assets/icon-communities.svg" />
+          <h2 class="font-bold text-5xl">1.4k+</h2>
+          <p class="text-sm font-light self-center">Communities Formed</p>
+        </div>
+        <!--messages-->
+        <div class="flex flex-col gap-2">
+          <img width="30" src="assets/icon-messages.svg" />
+          <h2 class="font-bold text-5xl">2.7m+</h2>
+          <p class="text-sm font-light self-center">Messages Sent</p>
+        </div>
+      </div>
+    </section>
+    <!--grow-together-section-->
+    <section>
+      <img src="assets/bg-section-top-mobile-1.svg" />
+      <div
+        class="flex flex-col items-center gap-20 bg-paleBlue px-6 pt-16 pb-10"
+      >
+        <img src="assets/illustration-grow-together.svg" />
+        <div id="caption-container" class="text-center">
+          <h2 class="font-heading font-bold text-xl">Grow Together</h2>
+          <p class="text-sm pt-4">
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
+      </div>
+      <img src="assets/bg-section-bottom-mobile-1.svg" />
+    </section>
+    <!-- Try it free Build The Community Your Fans Will Love Huddle re-imagines the
+    way we build communities. You have a voice, but so does your audience.
+    Create connections with your users as you engage in genuine discussion. Get
+    Started For Free 1.4k+ Communities Formed 2.7m+ Messages Sent Grow Together
+    Generate meaningful discussions with your audience and build a strong, loyal
+    community. Think of the insightful conversations you miss out on with a
+    feedback form. Flowing Conversations You wouldn't paginate a conversation in
+    real life, so why do it online? Our threads have just-in-time loading for a
+    more natural flow. Your Users It takes no time at all to integrate Huddle
+    with your app's authentication solution. This means, once signed in to your
+    app, your users can start chatting immediately. Ready To Build Your
+    Community? Get Started For Free Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices
+    quis sem. Phone: +1-543-123-4567 example@huddle.com Newsletter To recieve
+    tips on how to grow your community, sign up to our weekly newsletter. We’ll
+    never send you spam or pass on your email address Subscribe -->
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
-
-  Get Started For Free
-
-  1.4k+
-  Communities Formed
-
-  2.7m+
-  Messages Sent
-
-  Grow Together
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
-
-  Your Users
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://mirfandev.tech">M. Irfan</a>.
+      </p>
+    </footer>
+  </body>
 </html>
