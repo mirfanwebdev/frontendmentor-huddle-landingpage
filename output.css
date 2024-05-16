@@ -566,14 +566,9 @@ html {
   margin: auto;
 }
 
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .my-12{
@@ -581,9 +576,8 @@ html {
   margin-bottom: 3rem;
 }
 
-.mx-6{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .flex{
@@ -597,6 +591,10 @@ html {
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .grow{
@@ -615,14 +613,6 @@ html {
   justify-content: space-between;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
-.gap-6{
-  gap: 1.5rem;
-}
-
 .gap-10{
   gap: 2.5rem;
 }
@@ -631,20 +621,12 @@ html {
   gap: 0.5rem;
 }
 
-.gap-8{
-  gap: 2rem;
-}
-
-.gap-12{
-  gap: 3rem;
-}
-
-.gap-24{
-  gap: 6rem;
-}
-
 .gap-20{
   gap: 5rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .self-center{
@@ -693,6 +675,11 @@ html {
   padding-right: 1rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -703,37 +690,14 @@ html {
   padding-bottom: 0.25rem;
 }
 
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.py-14{
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.pt-6{
-  padding-top: 1.5rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-10{
@@ -742,6 +706,10 @@ html {
 
 .pt-16{
   padding-top: 4rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-center{
@@ -793,12 +761,6 @@ html {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg{
