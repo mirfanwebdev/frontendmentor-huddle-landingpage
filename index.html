@@ -61,7 +61,7 @@
   </head>
   <body>
     <!--navigation-->
-    <nav class="flex justify-between items-center">
+    <nav class="flex justify-between items-center p-6">
       <div class="w-24">
         <img class="object-cover" src="./assets/logo.svg" alt="logo" />
       </div>
@@ -72,7 +72,7 @@
       </button>
     </nav>
     <!--section header-->
-    <section class="flex flex-col text-center gap-4 mx-4">
+    <section class="flex flex-col text-center gap-8 mx-6 my-12">
       <h1 class="font-heading font-bold text-2xl">
         Build The Community Your Fans Will Love
       </h1>
@@ -82,40 +82,44 @@
         in genuine discussion.
       </p>
       <button
-        class="w-fit m-auto py-2 px-8 border border-pink rounded-full bg-pink text-white text-xs"
+        class="w-fit m-auto py-2 px-8 border border-pink rounded-full bg-pink text-white text-xs shadow-lg"
       >
         Get Started For Free
       </button>
     </section>
     <!--section hero-->
     <section>
-      <img src="assets/screen-mockups.svg" alt="mockup" />
-      <div class="flex flex-col">
+      <img class="px-6 py-12" src="assets/screen-mockups.svg" alt="mockup" />
+      <div class="flex flex-col gap-10 items-center">
         <!--communities-->
-        <div>
-          <img width="40" src="assets/icon-communities.svg" />
+        <div class="flex flex-col gap-2">
+          <img width="30" src="assets/icon-communities.svg" />
           <h2 class="font-bold text-5xl">1.4k+</h2>
-          <p class="text-sm font-light">Communities Formed</p>
+          <p class="text-sm font-light self-center">Communities Formed</p>
         </div>
         <!--messages-->
-        <div>
-          <img width="40" src="assets/icon-messages.svg" />
+        <div class="flex flex-col gap-2">
+          <img width="30" src="assets/icon-messages.svg" />
           <h2 class="font-bold text-5xl">2.7m+</h2>
-          <p class="text-sm font-light">Messages Sent</p>
+          <p class="text-sm font-light self-center">Messages Sent</p>
         </div>
       </div>
     </section>
     <!--grow-together-section-->
     <section>
       <img src="assets/bg-section-top-mobile-1.svg" />
-      <div class="flex flex-col items-center bg-paleBlue">
+      <div
+        class="flex flex-col items-center gap-20 bg-paleBlue px-6 pt-16 pb-10"
+      >
         <img src="assets/illustration-grow-together.svg" />
-        <h2 class="font-heading font-bold text-xl">Grow Together</h2>
-        <p class="text-sm">
-          Generate meaningful discussions with your audience and build a strong,
-          loyal community. Think of the insightful conversations you miss out on
-          with a feedback form.
-        </p>
+        <div id="caption-container" class="text-center">
+          <h2 class="font-heading font-bold text-xl">Grow Together</h2>
+          <p class="text-sm pt-4">
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
       </div>
       <img src="assets/bg-section-bottom-mobile-1.svg" />
     </section>
