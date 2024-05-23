@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./public/favicon-32x32.png"
     />
     <link href="./output.css" rel="stylesheet" />
 
@@ -33,7 +33,7 @@
         <img class="object-cover" src="./assets/logo.svg" alt="logo" />
       </div>
       <button
-        class="border rounded-full border-lightPink px-4 md:px-6 py-1 md:py-2 font text-xs font-bold text-lightPink"
+        class="border rounded-full border-pink px-4 md:px-6 py-1 md:py-2 font text-xs font-bold text-pink hover:text-lightPink hover:border-lightPink"
       >
         Try it Free
       </button>
@@ -51,7 +51,7 @@
         in genuine discussion.
       </p>
       <button
-        class="w-fit m-auto py-2 md:py-4 px-6 md:px-16 border border-pink rounded-full bg-pink text-white text-xs md:text-base drop-shadow-lg"
+        class="w-fit m-auto py-2 md:py-4 px-6 md:px-16 border border-pink rounded-full bg-pink text-white text-xs md:text-base drop-shadow-lg hover:bg-lightPink active:bg-lightPink"
       >
         Get Started For Free
       </button>
@@ -201,26 +201,33 @@
     </section>
     <!--conversion-section-->
     <section class="flex flex-col text-center gap-8 mx-6 py-28">
-      <h1 class="font-heading font-bold text-2xl">
+      <h1 class="font-heading font-bold text-2xl md:text-4xl">
         Ready To Build Your Community?
       </h1>
       <button
-        class="w-fit m-auto py-2 px-8 border border-pink rounded-full bg-pink text-white text-xs font-bold shadow-lg"
+        class="w-fit m-auto py-2 md:py-4 px-8 md:px-16 border border-pink rounded-full bg-pink text-white text-xs md:text-base font-bold drop-shadow-lg hover:bg-lightPink active:bg-lightPink"
       >
         Get Started For Free
       </button>
     </section>
     <!--footer-->
     <footer class="pt-12">
-      <img
-        src="assets/bg-footer-top-mobile.svg"
-        alt="footer-top-mobile"
-        class="w-full h-auto"
-      />
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="assets/bg-footer-top-desktop.svg"
+        />
+        <img
+          src="assets/bg-footer-top-mobile.svg"
+          alt="footer-top-mobile"
+          class="w-full h-auto"
+        />
+      </picture>
+
       <div
-        class="flex flex-col-reverse gap-20 bg-darkCyan text-white px-6 py-12"
+        class="flex flex-col-reverse md:flex-row gap-20 md:justify-between bg-darkCyan text-white px-6 md:px-16 py-12"
       >
-        <address class="flex flex-col gap-6 text-sm not-italic">
+        <address class="flex flex-col gap-6 text-sm not-italic md:max-w-md">
           <svg
             class="w-52"
             viewBox="0 0 240 39"
@@ -257,21 +264,23 @@
           </div>
         </address>
         <!--newsletter-->
-        <form class="flex flex-col gap-4" action="#">
+        <form class="flex flex-col gap-4 md:max-w-md" action="#">
           <h2 class="uppercase text-xl font-bold">Newsletter</h2>
           <p class="pb-4 text-sm">
             To recieve tips on how to grow your community, sign up to our weekly
             newsletter. We’ll never send you spam or pass on your email address
           </p>
-          <input
-            class="p-3 text-sm h-auto text-black border-transparent rounded-lg"
-            type="email"
-          />
-          <input
-            class="w-fit self-end bg-pink py-3 px-8 border-transparent rounded-lg font-bold"
-            type="submit"
-            value="Subscribe"
-          />
+          <div class="flex flex-col md:flex-row gap-4 md:gap-6">
+            <input
+              class="p-3 text-sm h-auto text-black border-transparent rounded-lg flex-grow"
+              type="email"
+            />
+            <input
+              class="w-fit self-end bg-pink py-3 px-8 border-transparent rounded-lg font-bold hover:bg-lightPink active:bg-lightPink"
+              type="submit"
+              value="Subscribe"
+            />
+          </div>
         </form>
       </div>
     </footer>
